@@ -14,16 +14,10 @@
     //
     function onDeviceReady() {
         var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
+        element.innerHTML = device.uuid     + '<br />' +
                             'Device Version: '  + device.version  + '<br />';
-                            'Device manufacturer: '  + device.manufacturer  + '<br />';
-                            'Device isVirtual: '  + device.isVirtual  + '<br />';
-                            'Device serial: '  + device.serial  + '<br />';
-
     }
+
     </script>
   </head>
   <body>
